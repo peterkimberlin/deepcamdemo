@@ -68,14 +68,52 @@ export default function RootCanalPage() {
                 </div>
 
                 {/* Image Column */}
-                <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black/50">
-                    <Image
-                        src="/assets/root-canal-info.png"
-                        alt="Root Canal Clinical Info"
-                        width={800}
-                        height={1000}
-                        className="w-full h-auto object-contain"
-                    />
+                <div className="space-y-8">
+                    {/* Endodontics */}
+                    <div className="space-y-4">
+                        <h3 className="text-xl font-bold text-white border-l-4 border-primary pl-3">Endodontics</h3>
+                        <div className="grid grid-cols-2 gap-4">
+                            <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/50">
+                                <Image
+                                    src="/assets/endodontics_1.png"
+                                    alt="Endodontics 1"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/50">
+                                <Image
+                                    src="/assets/endodontics_2.png"
+                                    alt="Endodontics 2"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Implantology */}
+                    <div className="space-y-4">
+                        <h3 className="text-xl font-bold text-white border-l-4 border-primary pl-3">Implantology</h3>
+                        <div className="grid grid-cols-2 gap-4">
+                            <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/50">
+                                <Image
+                                    src="/assets/implantology_1.png"
+                                    alt="Implantology 1"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/50">
+                                <Image
+                                    src="/assets/implantology_2.png"
+                                    alt="Implantology 2"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
