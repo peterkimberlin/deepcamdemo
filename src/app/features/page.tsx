@@ -7,7 +7,8 @@ export default function FeaturesPage() {
             {/* Header */}
             <div className="text-center space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white">
-                    Advanced Diagnostics
+                    <span className="text-yellow-400">Real-time. Treatment Confidence.</span> <br />
+                    The Next-Generation Endoscopy Camera.
                 </h1>
                 <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
                     Discover the technology that makes precise dental endoscopy possible.
