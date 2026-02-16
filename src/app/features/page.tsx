@@ -37,26 +37,24 @@ export default function FeaturesPage() {
                         <Scan className="w-6 h-6" />
                     </div>
                     <h2 className="text-3xl font-bold text-white">
-                        Real-Time <br /> <span className="text-primary">Root Canal Diagnosis</span>
+                        Real-Time <br /> <span className="text-primary">Diagnosis</span>
                     </h2>
                     <div className="space-y-4 text-zinc-300 text-lg leading-relaxed">
-                        <p>
-                            DeepCAM isn't just a camera; it's an intelligent assistant.
-                            Our proprietary AI algorithms identify fractured files and root canal structures in real-time.
-                        </p>
-                        <ul className="space-y-2 list-none">
-                            <li className="flex items-center gap-3">
-                                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                                Canal Identification
-                            </li>
-                            <li className="flex items-center gap-3">
-                                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                                Fracture Detection
-                            </li>
-                            <li className="flex items-center gap-3">
-                                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                                Live Guidance Overlay
-                            </li>
+                        <ul className="space-y-3 list-none">
+                            {[
+                                "Root Canal Orifice Finding",
+                                "Real-time Extirpation Process",
+                                "Finding Root Fractures",
+                                "Check Cervical Abfraction",
+                                "Cavity Detection (Interproximal)",
+                                "Lateral Window Sinus Floor Elevation (LWSFE)",
+                                "Crestal Sinus Elevation (Transcrestal approach)"
+                            ].map((item, index) => (
+                                <li key={index} className="flex items-start gap-3">
+                                    <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                                    <span>{item}</span>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>
