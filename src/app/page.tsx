@@ -25,8 +25,8 @@ export default function Home() {
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight">
-            <span className="text-yellow-400">Real-time. Treatment Confidence.</span> <br />
-            The Next-Generation Endoscopy Camera.
+            Ultra-Compact <br />
+            <span className="text-yellow-400">Endoscopy Camera</span>
           </h1>
 
           <p className="text-lg md:text-2xl text-zinc-300 font-medium leading-relaxed">
