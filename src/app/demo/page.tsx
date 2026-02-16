@@ -60,7 +60,7 @@ export default function DemoPage() {
                     {/* Simulated Camera Feed */}
                     {/* Simulated Camera Feed */}
                     <video
-                        src="/assets/demovideo_1.mov"
+                        src="/assets/demovideo_2.mov"
                         autoPlay
                         muted
                         loop
