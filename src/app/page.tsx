@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Zap, Shield, ScanEye, ChevronRight } from "lucide-react";
+import { ArrowRight, Zap, Shield, ScanEye, ChevronRight, CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -42,14 +45,61 @@ export default function Home() {
         </div>
 
         <div className="relative mt-12 w-full max-w-5xl aspect-[16/9] rounded-2xl border border-white/5 bg-white/5 backdrop-blur-md overflow-hidden shadow-2xl shadow-primary/10 group">
-          <Image
-            src="/assets/product_img.png"
-            alt="DeepCAM Device"
-            fill
-            className="object-contain p-8 transition-transform duration-700 group-hover:scale-105"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="relative w-full h-full"
+          >
+            <motion.div
+              animate={{
+                scale: [1, 1, 3],
+                x: [0, 0, -100], // Adjust these values based on where the head is. Assuming Left or Center.
+                y: [0, 0, 50]
+              }}
+              transition={{
+                duration: 4,
+                times: [0, 0.5, 1],
+                ease: "easeInOut",
+                delay: 2
+              }}
+              className="relative w-full h-full"
+            >
+              <Image
+                src="/assets/product_img.png"
+                alt="DeepCAM Device"
+                fill
+                className="object-contain p-8"
+                priority
+              />
+
+              {/* Highlight Effect - Positioned based on assumption, can be adjusted */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 5.5, duration: 0.5 }}
+                className="absolute top-1/2 left-1/2 w-32 h-32 -translate-x-1/2 -translate-y-1/2 bg-primary/30 blur-2xl rounded-full z-10 mix-blend-screen"
+              />
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 5.5, duration: 0.5 }}
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20"
+              >
+                <div className="relative">
+                  <span className="absolute -top-1 -right-1 flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+                  </span>
+                  <div className="px-3 py-1 bg-black/80 backdrop-blur border border-primary/50 rounded-full text-xs font-mono text-primary whitespace-nowrap">
+                    Ultra-Compact Head
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent pointer-events-none" />
         </div>
       </section>
 
