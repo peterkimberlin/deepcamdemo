@@ -62,12 +62,7 @@ export default function RootLayout({
             >
               Our Team
             </Link>
-            <Link
-              href="/demo"
-              className="group px-5 py-2 text-sm font-medium transition-all duration-300 rounded-full bg-white/5 hover:bg-primary/10 border border-white/10 hover:border-primary/50 text-zinc-300 hover:text-primary flex items-center gap-2"
-            >
-              Launch Demo
-            </Link>
+
           </div>
         </nav>
         <main className="min-h-screen pt-24 pb-12 w-full max-w-[1400px] mx-auto px-6">
