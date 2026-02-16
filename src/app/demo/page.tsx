@@ -60,7 +60,7 @@ export default function DemoPage() {
                     {/* Simulated Camera Feed */}
                     {/* Simulated Camera Feed */}
                     <video
-                        src="/assets/DemoVideo.mp4"
+                        src="/assets/demovideo_1.mov"
                         autoPlay
                         muted
                         loop
@@ -89,12 +89,12 @@ export default function DemoPage() {
                                         </div>
                                         <div className="space-y-1 font-mono text-xs text-zinc-300">
                                             <div className="flex justify-between w-48">
-                                                <span>Plaque Detected</span>
-                                                <span className="text-green-400">Low</span>
+                                                <span>Root Canal Orifice Detected</span>
+                                                <span className="text-green-400">low</span>
                                             </div>
                                             <div className="flex justify-between w-48">
-                                                <span>Enamel Integrity</span>
-                                                <span className="text-primary">99.8%</span>
+                                                <span>Root Fractures Detected</span>
+                                                <span className="text-primary">3.8%</span>
                                             </div>
                                         </div>
                                     </div>
