@@ -53,9 +53,9 @@ export default function Home() {
           >
             <motion.div
               animate={{
-                scale: [1, 1, 3],
-                x: [0, 0, -100], // Adjust these values based on where the head is. Assuming Left or Center.
-                y: [0, 0, 50]
+                scale: [1, 1, 3.5],
+                x: [0, 0, -280], // Shift left to reveal right side
+                y: [0, 0, 0]
               }}
               transition={{
                 duration: 4,
@@ -73,26 +73,26 @@ export default function Home() {
                 priority
               />
 
-              {/* Highlight Effect - Positioned based on assumption, can be adjusted */}
+              {/* Highlight Effect - Targeting the light emitting head (Right side) */}
               <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 5.5, duration: 0.5 }}
-                className="absolute top-1/2 left-1/2 w-32 h-32 -translate-x-1/2 -translate-y-1/2 bg-primary/30 blur-2xl rounded-full z-10 mix-blend-screen"
+                transition={{ delay: 5, duration: 0.5 }}
+                className="absolute top-[48%] right-[15%] w-24 h-24 -translate-y-1/2 bg-cyan-400/40 blur-xl rounded-full z-10 mix-blend-screen"
               />
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 5.5, duration: 0.5 }}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20"
+                transition={{ delay: 5, duration: 0.5 }}
+                className="absolute top-[48%] right-[15%] -translate-y-1/2 z-20 translate-x-8"
               >
                 <div className="relative">
-                  <span className="absolute -top-1 -right-1 flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+                  <span className="absolute -top-1 -left-1 flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-400"></span>
                   </span>
-                  <div className="px-3 py-1 bg-black/80 backdrop-blur border border-primary/50 rounded-full text-xs font-mono text-primary whitespace-nowrap">
-                    Ultra-Compact Head
+                  <div className="ml-4 px-3 py-1 bg-black/80 backdrop-blur border border-cyan-500/50 rounded-full text-xs font-mono text-cyan-400 whitespace-nowrap shadow-[0_0_15px_rgba(34,211,238,0.3)]">
+                    Light Emitting Head
                   </div>
                 </div>
               </motion.div>
