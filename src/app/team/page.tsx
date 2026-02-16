@@ -2,8 +2,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Mail, User, Send, CheckCircle2, Building2 } from 'lucide-react';
+import { Mail, User, Send, CheckCircle2, Building2, Users } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 export default function TeamPage() {
     const [submitted, setSubmitted] = useState(false);
@@ -29,6 +30,31 @@ export default function TeamPage() {
                     Changing the future of dentistry, together.
                 </p>
             </div>
+
+            {/* Team Adoption */}
+            <section className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="order-2 lg:order-1 relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                    <Image // eslint-disable-next-line
+                        src="/assets/usecase-team.jpg" // eslint-disable-next-line
+                        alt="Dental Team" // eslint-disable-next-line
+                        width={800} // eslint-disable-next-line
+                        height={600} // eslint-disable-next-line
+                        className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
+                    />
+                </div>
+                <div className="order-1 lg:order-2 space-y-6">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                        <Users className="w-6 h-6" />
+                    </div>
+                    <h2 className="text-3xl font-bold text-white">
+                        Trusted by Experts
+                    </h2>
+                    <p className="text-lg text-zinc-300 leading-relaxed">
+                        Join the growing community of dental professionals who rely on DeepCAM
+                        for precise diagnostics and enhanced clinical communication.
+                    </p>
+                </div>
+            </section>
 
             <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-12 bg-zinc-900/50 p-8 md:p-12 rounded-3xl border border-white/5 shadow-2xl backdrop-blur-sm">
 
