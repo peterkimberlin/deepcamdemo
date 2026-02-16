@@ -10,96 +10,65 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center space-y-24">
       {/* Hero Section */}
-      <section className="relative w-full flex flex-col items-center text-center space-y-8 animate-in fade-in zoom-in duration-700">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 blur-[120px] rounded-full -z-10" />
+      {/* Hero Section */}
+      <section className="relative w-full max-w-7xl px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20 animate-in fade-in duration-700">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 blur-[120px] rounded-full -z-10" />
 
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-medium tracking-wide uppercase">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-          </span>
-          Next Generation Endoscopy
-        </div>
+        {/* Left Column: Text Content */}
+        <div className="flex flex-col items-start text-left space-y-8">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-medium tracking-wide uppercase">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </span>
+            Next Generation Endoscopy
+          </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white max-w-4xl">
-          Ultra-Compact <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-white">Endoscopy Camera</span>
-        </h1>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight">
+            Ultra-Compact <br />
+            <span className="text-yellow-400">Endoscopy Camera</span>
+          </h1>
 
-        <p className="text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed">
-          Visualize your confidence. <br />
-          Optimize performance & your workflow.
-        </p>
+          <p className="text-lg md:text-2xl text-zinc-300 font-medium leading-relaxed">
+            Visualize your confidence. <br />
+            Optimize your workflow.
+          </p>
 
-        <div className="flex items-center gap-4 pt-4">
-          <Link
-            href="/demo"
-            className="group relative inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-semibold rounded-full transition-all hover:bg-primary/90 hover:scale-105 active:scale-95"
-          >
-            Start Interactive Demo
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </Link>
-          <button className="px-8 py-4 text-zinc-300 font-medium hover:text-white transition-colors">
-            View Specs
-          </button>
-        </div>
-
-        <div className="relative mt-12 w-full max-w-5xl aspect-[16/9] rounded-2xl border border-white/5 bg-white/5 backdrop-blur-md overflow-hidden shadow-2xl shadow-primary/10 group">
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="relative w-full h-full"
-          >
-            <motion.div
-              animate={{
-                scale: [1, 1, 3.5],
-                x: [0, 0, -280], // Shift left to reveal right side
-                y: [0, 0, 0]
-              }}
-              transition={{
-                duration: 4,
-                times: [0, 0.5, 1],
-                ease: "easeInOut",
-                delay: 2
-              }}
-              className="relative w-full h-full"
+          <div className="flex items-center gap-4 pt-4">
+            <Link
+              href="/demo"
+              className="group relative inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-semibold rounded-full transition-all hover:bg-primary/90 hover:scale-105 active:scale-95"
             >
-              <Image
-                src="/assets/product_img.png"
-                alt="DeepCAM Device"
-                fill
-                className="object-contain p-8"
-                priority
-              />
+              Start Interactive Demo
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+            <button className="px-8 py-4 text-zinc-300 font-medium hover:text-white transition-colors">
+              View Specs
+            </button>
+          </div>
+        </div>
 
-              {/* Highlight Effect - Targeting the light emitting head (Right side) */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 5, duration: 0.5 }}
-                className="absolute top-[48%] right-[15%] w-24 h-24 -translate-y-1/2 bg-cyan-400/40 blur-xl rounded-full z-10 mix-blend-screen"
-              />
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 5, duration: 0.5 }}
-                className="absolute top-[48%] right-[15%] -translate-y-1/2 z-20 translate-x-8"
-              >
-                <div className="relative">
-                  <span className="absolute -top-1 -left-1 flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-400"></span>
-                  </span>
-                  <div className="ml-4 px-3 py-1 bg-black/80 backdrop-blur border border-cyan-500/50 rounded-full text-xs font-mono text-cyan-400 whitespace-nowrap shadow-[0_0_15px_rgba(34,211,238,0.3)]">
-                    Light Emitting Head
-                  </div>
-                </div>
-              </motion.div>
-            </motion.div>
-          </motion.div>
+        {/* Right Column: Product Image (No Zoom) */}
+        <div className="relative w-full aspect-[4/5] md:aspect-square lg:aspect-[4/5] flex items-center justify-center">
+          <div className="relative w-full h-full max-h-[800px]">
+            <Image
+              src="/assets/product_img.png"
+              alt="DeepCAM Device"
+              fill
+              className="object-contain"
+              priority
+            />
 
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent pointer-events-none" />
+            {/* Static Highlight Label if desired, or remove if "rollback" means completely plain. 
+                      User said "rollback zoom function( no zoom effect)". 
+                      I will keep a subtle static highlight or just the image as the image itself has text? 
+                      The user provided image has "DeepCAM" and "EZ-CAM 160" on the product, which are likely part of the 3D render.
+                      The "highlight point" request was for the animation. 
+                      I will assume "no zoom effect" implies a static image.
+                      I'll add the highlight label back if it fits the "static" look, but simpler. 
+                      Actually, let's keep it simple: just the image first.
+                  */}
+          </div>
         </div>
       </section>
 
