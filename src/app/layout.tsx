@@ -48,7 +48,7 @@ export default function RootLayout({
               href="/root-canal"
               className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
             >
-              Root Canal
+              Applications
             </Link>
             <Link
               href="/usecase"
