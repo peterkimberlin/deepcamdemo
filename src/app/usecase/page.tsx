@@ -33,7 +33,7 @@ export default function UsecasePage() {
                         Seamless Integration
                     </h2>
                     <p className="text-lg text-zinc-300 leading-relaxed">
-                        DeepCam integrates effortlessly into your existing operatory setup.
+                        DeepCAM integrates effortlessly into your existing operatory setup.
                         Stream live video directly to an iPad for instant patient education
                         and better ergonomic positioning during treatment.
                     </p>
@@ -85,7 +85,7 @@ export default function UsecasePage() {
                         Trusted by Experts
                     </h2>
                     <p className="text-lg text-zinc-300 leading-relaxed">
-                        Join the growing community of dental professionals who rely on DeepCam
+                        Join the growing community of dental professionals who rely on DeepCAM
                         for precise diagnostics and enhanced clinical communication.
                     </p>
                 </div>

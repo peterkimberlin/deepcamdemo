@@ -24,7 +24,7 @@ export default function Home() {
         </h1>
 
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed">
-          DeepCam redefines dental diagnostics with AI-powered 720x720 imaging and zero-latency streaming. Experience the difference today.
+          DeepCAM redefines dental diagnostics with AI-powered 720x720 imaging and zero-latency streaming. Experience the difference today.
         </p>
 
         <div className="flex items-center gap-4 pt-4">
@@ -43,7 +43,7 @@ export default function Home() {
         <div className="relative mt-12 w-full max-w-5xl aspect-[16/9] rounded-2xl border border-white/5 bg-white/5 backdrop-blur-md overflow-hidden shadow-2xl shadow-primary/10 group">
           <Image
             src="/assets/product.png"
-            alt="DeepCam Device"
+            alt="DeepCAM Device"
             fill
             className="object-contain p-8 transition-transform duration-700 group-hover:scale-105"
             priority

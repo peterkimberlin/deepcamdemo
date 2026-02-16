@@ -40,7 +40,7 @@ export default function FeaturesPage() {
                     </h2>
                     <div className="space-y-4 text-zinc-300 text-lg leading-relaxed">
                         <p>
-                            DeepCam isn't just a camera; it's an intelligent assistant.
+                            DeepCAM isn't just a camera; it's an intelligent assistant.
                             Our proprietary AI algorithms identify fractured files and root canal structures in real-time.
                         </p>
                         <ul className="space-y-2 list-none">
@@ -66,7 +66,7 @@ export default function FeaturesPage() {
                 <div className="text-center space-y-4 max-w-3xl mx-auto">
                     <h2 className="text-3xl font-bold text-white">What You See Is What Is There</h2>
                     <p className="text-zinc-400">
-                        Compare the naked eye view vs. DeepCam's enhanced visualization.
+                        Compare the naked eye view vs. DeepCAM's enhanced visualization.
                         Reveal cracks, lesions, and details that were previously invisible.
                     </p>
                 </div>
@@ -74,7 +74,7 @@ export default function FeaturesPage() {
                 <div className="w-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black">
                     <Image
                         src="/assets/feature-comparison.jpg"
-                        alt="DeepCam Comparison"
+                        alt="DeepCAM Comparison"
                         width={1200}
                         height={1000}
                         className="w-full h-auto"

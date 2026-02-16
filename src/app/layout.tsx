@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DeepCam - The Future of Dental Imaging",
-  description: "Experience the next generation of dental endoscopy with DeepCam.",
+  title: "DeepCAM - The Future of Dental Imaging",
+  description: "Experience the next generation of dental endoscopy with DeepCAM.",
 };
 
 export default function RootLayout({
@@ -34,7 +34,7 @@ export default function RootLayout({
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             </div>
             <span className="text-xl font-bold tracking-tighter text-white">
-              DeepCam
+              DeepCAM
             </span>
           </Link>
           <div className="flex items-center gap-6">
@@ -55,6 +55,12 @@ export default function RootLayout({
               className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
             >
               Usecase
+            </Link>
+            <Link
+              href="/team"
+              className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+            >
+              Our Team
             </Link>
             <Link
               href="/demo"
