@@ -54,7 +54,7 @@ export default function RootLayout({
               href="/usecase"
               className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
             >
-              Usecase
+              Integration
             </Link>
             <Link
               href="/team"
