@@ -104,10 +104,7 @@ export default function DemoPage() {
                     </AnimatePresence>
                 </motion.div>
 
-                {/* Grid Overlay */}
-                <div className="absolute inset-0 pointer-events-none opacity-20"
-                    style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '100px 100px' }}>
-                </div>
+
 
                 {/* Flash Effect on Capture */}
                 <AnimatePresence>
