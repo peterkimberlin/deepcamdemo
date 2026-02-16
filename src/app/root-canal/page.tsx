@@ -94,20 +94,31 @@ export default function RootCanalPage() {
 
                     {/* Implantology */}
                     <div className="space-y-4">
-                        <h3 className="text-xl font-bold text-white border-l-4 border-primary pl-3">Implantology</h3>
+                        <h3 className="text-xl font-bold text-white border-l-4 border-primary pl-3">
+                            Implantology - Sinus elevation
+                            <span className="block text-sm font-normal text-zinc-400">(Transcrestal approach)</span>
+                        </h3>
                         <div className="grid grid-cols-2 gap-4">
                             <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/50">
                                 <Image
-                                    src="/assets/implantology_1.png"
-                                    alt="Implantology 1"
+                                    src="/assets/implantology_sinus_1.png"
+                                    alt="Sinus Elevation 1"
                                     fill
                                     className="object-cover"
                                 />
                             </div>
                             <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/50">
                                 <Image
-                                    src="/assets/implantology_2.png"
-                                    alt="Implantology 2"
+                                    src="/assets/implantology_sinus_2.png"
+                                    alt="Sinus Elevation 2"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="relative aspect-square col-span-2 md:col-span-1 rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/50">
+                                <Image
+                                    src="/assets/implantology_sinus_3.png"
+                                    alt="Sinus Elevation 3"
                                     fill
                                     className="object-cover"
                                 />
