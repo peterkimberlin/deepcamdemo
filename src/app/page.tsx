@@ -43,7 +43,7 @@ export default function Home() {
 
         <div className="relative mt-12 w-full max-w-5xl aspect-[16/9] rounded-2xl border border-white/5 bg-white/5 backdrop-blur-md overflow-hidden shadow-2xl shadow-primary/10 group">
           <Image
-            src="/assets/product.png"
+            src="/assets/product_img.png"
             alt="DeepCAM Device"
             fill
             className="object-contain p-8 transition-transform duration-700 group-hover:scale-105"
