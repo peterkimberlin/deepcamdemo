@@ -48,6 +48,15 @@ export default function TeamPage() {
                                 dsmholdings@naver.com
                             </a>
                         </div>
+
+                        <div className="flex items-center gap-4 text-zinc-200 mt-4">
+                            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                <span className="font-bold text-sm">TEL</span>
+                            </div>
+                            <a href="tel:+821086154364" className="text-lg font-medium hover:text-primary transition-colors">
+                                +82-10-8615-4364
+                            </a>
+                        </div>
                     </div>
 
                     <div className="pt-8 border-t border-white/5">
@@ -55,8 +64,8 @@ export default function TeamPage() {
                         <div className="flex items-start gap-4 text-zinc-400 mt-4">
                             <Building2 className="w-5 h-5 mt-1 text-primary" />
                             <p>
-                                DSM Holdings<br />
-                                Seoul, South Korea
+                                3rd floor, Daerim Plaza, Deongneung-ro, Nowon-gu<br />
+                                Seoul, Korea (Postal Code: 01646)
                             </p>
                         </div>
                     </div>
