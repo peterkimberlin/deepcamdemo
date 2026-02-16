@@ -70,8 +70,8 @@ export default function TeamPage() {
                             <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                                 <Mail className="w-5 h-5" />
                             </div>
-                            <a href="mailto:dsmholdings@naver.com" className="text-lg font-medium hover:text-primary transition-colors">
-                                dsmholdings@naver.com
+                            <a href="mailto:deepcam.help@gmail.com" className="text-lg font-medium hover:text-primary transition-colors">
+                                deepcam.help@gmail.com
                             </a>
                         </div>
 
@@ -173,7 +173,7 @@ export default function TeamPage() {
                             <h3 className="text-2xl font-bold text-white">Request Sent!</h3>
                             <p className="text-zinc-400 max-w-xs">
                                 Thank you for your interest. We have received your information and will be in touch shortly via
-                                <span className="text-primary font-medium"> dsmholdings@naver.com</span>.
+                                <span className="text-primary font-medium"> deepcam.help@gmail.com</span>.
                             </p>
                             <button
                                 onClick={() => setSubmitted(false)}

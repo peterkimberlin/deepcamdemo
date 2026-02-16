@@ -18,7 +18,7 @@ export default function UsecasePage() {
             <section className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="order-2 lg:order-1 relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                     <Image
-                        src="/assets/usecase-workflow.jpg"
+                        src="/assets/usecase-workflow-new.jpg"
                         alt="Seamless Workflow"
                         width={800}
                         height={600}
