@@ -51,6 +51,12 @@ export default function RootLayout({
               Root Canal
             </Link>
             <Link
+              href="/usecase"
+              className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+            >
+              Usecase
+            </Link>
+            <Link
               href="/demo"
               className="group px-5 py-2 text-sm font-medium transition-all duration-300 rounded-full bg-white/5 hover:bg-primary/10 border border-white/10 hover:border-primary/50 text-zinc-300 hover:text-primary flex items-center gap-2"
             >
