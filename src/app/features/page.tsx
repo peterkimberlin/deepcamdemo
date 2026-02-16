@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BrainCircuit, Scan, Microscope, Layers } from "lucide-react";
+import { BrainCircuit, Scan } from "lucide-react";
 
 export default function FeaturesPage() {
     return (
@@ -60,56 +60,53 @@ export default function FeaturesPage() {
                 </div>
             </section>
 
-            {/* Feature 2: Deep Visualization */}
-            <section className="w-full space-y-12">
-                <div className="text-center space-y-4 max-w-3xl mx-auto">
-                    <h2 className="text-3xl font-bold text-white">What You See Is What Is There</h2>
-                    <p className="text-zinc-400">
-                        Compare the naked eye view vs. DeepCAM's enhanced visualization.
-                        Reveal cracks, lesions, and details that were previously invisible.
-                    </p>
+            {/* Feature 2: Specifications */}
+            <section className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="space-y-8">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white">EZ-CAM 160</h2>
+                    <ul className="space-y-4 text-xl text-zinc-300">
+                        <li className="flex items-center gap-3">
+                            <span className="w-2 h-2 rounded-full bg-primary" />
+                            Voice activation
+                        </li>
+                        <li className="flex items-center gap-3">
+                            <span className="w-2 h-2 rounded-full bg-primary" />
+                            High Resolution
+                        </li>
+                        <li className="flex items-center gap-3">
+                            <span className="w-2 h-2 rounded-full bg-primary" />
+                            4 White LEDs
+                        </li>
+                        <li className="flex items-center gap-3">
+                            <span className="w-2 h-2 rounded-full bg-primary" />
+                            Diagonal FOV : 120
+                        </li>
+                        <li className="flex items-center gap-3">
+                            <span className="w-2 h-2 rounded-full bg-primary" />
+                            DOF: 3~50mm
+                        </li>
+                        <li className="flex items-center gap-3">
+                            <span className="w-2 h-2 rounded-full bg-primary" />
+                            IP68 compliance
+                        </li>
+                    </ul>
                 </div>
 
-                <div className="w-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black">
-                    <Image
-                        src="/assets/feature-comparison.jpg"
-                        alt="DeepCAM Comparison"
-                        width={1200}
-                        height={1000}
-                        className="w-full h-auto"
-                    />
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <FeatureDetailCard
-                        icon={<Microscope className="w-6 h-6" />}
-                        title="High-Res Close-Up"
-                        description="Detect early interproximal lesions with clinical precision."
-                    />
-                    <FeatureDetailCard
-                        icon={<Layers className="w-6 h-6" />}
-                        title="Enhanced Depth"
-                        description="See fine surface details and subgingival areas without mirrors."
-                    />
-                    <FeatureDetailCard
-                        icon={<Scan className="w-6 h-6" />}
-                        title="Transillumination"
-                        description="Built-in LED reveals hidden cracks and lesions instantly."
-                    />
+                <div className="relative flex justify-center">
+                    <div className="relative w-full max-w-md aspect-[1/3]"> {/* Adjusted aspect ratio for likely tall product image */}
+                        <Image
+                            src="/assets/ez-cam-160.png"
+                            alt="EZ-CAM 160"
+                            fill
+                            className="object-contain drop-shadow-[0_0_50px_rgba(34,211,238,0.2)]"
+                        />
+                    </div>
                 </div>
             </section>
-        </div>
+
+
+        </div >
     );
 }
 
-function FeatureDetailCard({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) {
-    return (
-        <div className="p-6 rounded-2xl bg-zinc-900/50 border border-white/5 hover:bg-white/5 hover:border-primary/20 transition-all duration-300">
-            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
-                {icon}
-            </div>
-            <h3 className="text-lg font-bold text-white mb-2">{title}</h3>
-            <p className="text-zinc-400 text-sm leading-relaxed">{description}</p>
-        </div>
-    );
-}
+
