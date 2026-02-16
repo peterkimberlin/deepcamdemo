@@ -19,12 +19,13 @@ export default function Home() {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white max-w-4xl">
-          Precision. Clarity. <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-white">The Future.</span>
+          Ultra-Compact <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-white">Endoscopy Camera</span>
         </h1>
 
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed">
-          DeepCAM redefines dental diagnostics with AI-powered 720x720 imaging and zero-latency streaming. Experience the difference today.
+          Visualize your confidence. <br />
+          Optimize performance & your workflow.
         </p>
 
         <div className="flex items-center gap-4 pt-4">
