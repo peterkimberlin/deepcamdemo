@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
+
 import { motion, AnimatePresence } from "framer-motion";
 import {
     Maximize2,
@@ -58,12 +58,14 @@ export default function DemoPage() {
                     className="relative w-full h-full"
                 >
                     {/* Simulated Camera Feed */}
-                    <Image
-                        src="/assets/demo.png"
-                        alt="Live View"
-                        fill
-                        className="object-cover opacity-90"
-                        priority
+                    {/* Simulated Camera Feed */}
+                    <video
+                        src="/assets/DemoVideo.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover opacity-90"
                     />
 
                     {/* AI Scan Overlay */}
