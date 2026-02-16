@@ -49,13 +49,20 @@ export default function TeamPage() {
                             </a>
                         </div>
 
-                        <div className="flex items-center gap-4 text-zinc-200 mt-4">
-                            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                                <span className="font-bold text-sm">TEL</span>
+                        <div className="flex flex-col gap-2 mt-4">
+                            <div className="flex items-center gap-4 text-zinc-200">
+                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                    <span className="font-bold text-sm">TEL</span>
+                                </div>
+                                <div className="flex flex-col">
+                                    <a href="tel:+821074429900" className="text-lg font-medium hover:text-primary transition-colors">
+                                        +82-10-7442-9900
+                                    </a>
+                                    <a href="tel:+821086154364" className="text-lg font-medium hover:text-primary transition-colors">
+                                        +82-10-8615-4364
+                                    </a>
+                                </div>
                             </div>
-                            <a href="tel:+821086154364" className="text-lg font-medium hover:text-primary transition-colors">
-                                +82-10-8615-4364
-                            </a>
                         </div>
                     </div>
 
