@@ -2,11 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Zap, Shield, ScanEye, ChevronRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Zap, Shield, ScanEye, ChevronRight, CheckCircle2, Play, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Home() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+
   return (
     <div className="flex flex-col items-center justify-center space-y-24">
       {/* Hero Section */}
@@ -42,8 +45,11 @@ export default function Home() {
               Start Interactive Demo
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
-            <button className="px-8 py-4 text-zinc-300 font-medium hover:text-white transition-colors">
-              View Specs
+            <button
+              onClick={() => setIsVideoOpen(true)}
+              className="px-8 py-4 text-zinc-300 font-medium hover:text-white transition-colors flex items-center gap-2"
+            >
+              <Play className="w-4 h-4" /> Watch Demo
             </button>
           </div>
         </div>
@@ -98,6 +104,26 @@ export default function Home() {
           Try the simulator <ChevronRight className="w-4 h-4" />
         </Link>
       </section>
+
+      {/* Video Modal */}
+      {isVideoOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-in fade-in duration-300">
+          <div className="relative w-full max-w-5xl aspect-video bg-black rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+            <button
+              onClick={() => setIsVideoOpen(false)}
+              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/50 text-white hover:bg-white/20 transition-colors"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <video
+              src="/assets/demovideo_2.mp4"
+              className="w-full h-full object-contain"
+              controls
+              autoPlay
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
