@@ -105,7 +105,33 @@ export default function FeaturesPage() {
             </section>
 
 
-        </div >
+
+            {/* Patents & Registrations */}
+            <section className="w-full space-y-8 pb-12">
+                <h2 className="text-3xl font-bold text-center text-white">Patents & Registrations</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                        <div className="text-primary font-bold mb-2">FDA Registration</div>
+                        <div className="text-xl text-white font-medium">No. 10091160</div>
+                        <div className="text-zinc-400 text-sm mt-1">Ultra-compact optical endoscopy</div>
+                    </div>
+                    <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                        <div className="text-primary font-bold mb-2">US Patent</div>
+                        <div className="text-xl text-white font-medium">No. 19/443,769</div>
+                        <div className="text-zinc-400 text-sm mt-1">2026-01-08 • Endoscope system with bayonet-coupling-type camera</div>
+                    </div>
+                    <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                        <div className="text-primary font-bold mb-2">International Patent</div>
+                        <div className="text-xl text-white font-medium">PCT/KR2025/011372</div>
+                    </div>
+                    <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                        <div className="text-primary font-bold mb-2">KR Patent</div>
+                        <div className="text-xl text-white font-medium">No. 10-2881763</div>
+                        <div className="text-zinc-400 text-sm mt-1">2025-03-17</div>
+                    </div>
+                </div>
+            </section>
+        </div>
     );
 }
 
