@@ -118,8 +118,7 @@ export default function RootCanalPage() {
                     {/* Implantology - Sinus Elevation */}
                     <div className="space-y-4">
                         <h3 className="text-xl font-bold text-white border-l-4 border-primary pl-3">
-                            Implantology - Sinus elevation
-                            <span className="block text-sm font-normal text-zinc-400">(Transcrestal approach)</span>
+                            Implantology - Sinus elevation(Transcrestal approach)
                         </h3>
                         <div className="grid grid-cols-2 gap-4">
                             <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/50">
