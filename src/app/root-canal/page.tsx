@@ -98,7 +98,7 @@ export default function RootCanalPage() {
                         <div className="grid grid-cols-2 gap-4">
                             <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/50">
                                 <Image
-                                    src="/assets/implantology_general_1.png"
+                                    src="/assets/implantology_sinus_1.png"
                                     alt="Implantology 1"
                                     fill
                                     className="object-cover"
@@ -106,7 +106,7 @@ export default function RootCanalPage() {
                             </div>
                             <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/50">
                                 <Image
-                                    src="/assets/implantology_general_2.png"
+                                    src="/assets/implantology_sinus_2.png"
                                     alt="Implantology 2"
                                     fill
                                     className="object-cover"
@@ -123,7 +123,7 @@ export default function RootCanalPage() {
                         <div className="grid grid-cols-2 gap-4">
                             <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/50">
                                 <Image
-                                    src="/assets/implantology_sinus_1.png"
+                                    src="/assets/implantology_general_1.png"
                                     alt="Sinus Elevation 1"
                                     fill
                                     className="object-cover"
@@ -131,7 +131,7 @@ export default function RootCanalPage() {
                             </div>
                             <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/50">
                                 <Image
-                                    src="/assets/implantology_sinus_2.png"
+                                    src="/assets/implantology_general_2.png"
                                     alt="Sinus Elevation 2"
                                     fill
                                     className="object-cover"

@@ -10,7 +10,7 @@ export default function UsecasePage() {
                     Clinical Scenarios
                 </h1>
                 <p className="text-xl text-zinc-400">
-                    Designed for the modern dental workflow.
+                    Designed for Digital Dentistry.
                 </p>
             </div>
 

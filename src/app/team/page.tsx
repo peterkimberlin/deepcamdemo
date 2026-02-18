@@ -27,7 +27,7 @@ export default function TeamPage() {
                     Our Team
                 </h1>
                 <p className="text-xl text-zinc-400">
-                    Changing the future of dentistry, together.
+                    Changing the future of Digital Dentistry, together.
                 </p>
             </div>
 
