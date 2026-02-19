@@ -90,11 +90,11 @@ export default function DemoPage() {
                                         <div className="space-y-1 font-mono text-xs text-zinc-300">
                                             <div className="flex justify-between w-48">
                                                 <span>Root Canal Orifice Detected</span>
-                                                <span className="text-green-400">low</span>
+                                                <span className="text-green-400">high</span>
                                             </div>
                                             <div className="flex justify-between w-48">
                                                 <span>Root Fractures Detected</span>
-                                                <span className="text-primary">3.8%</span>
+                                                <span className="text-primary">low</span>
                                             </div>
                                         </div>
                                     </div>

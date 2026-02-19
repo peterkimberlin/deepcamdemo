@@ -13,10 +13,39 @@ export default function TeamPage() {
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         setLoading(true);
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        setLoading(false);
-        setSubmitted(true);
+
+        const formData = new FormData(e.currentTarget);
+
+        // Convert FormData to URLSearchParams to ensure Google Apps Script 
+        // receives the data in e.parameter correctly via application/x-www-form-urlencoded
+        const urlSearchParams = new URLSearchParams();
+        urlSearchParams.append('name', formData.get('name') as string);
+        urlSearchParams.append('email', formData.get('email') as string);
+        urlSearchParams.append('org', formData.get('org') as string || '');
+
+        const SCRIPT_URL = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL;
+
+        if (!SCRIPT_URL) {
+            alert('Configuration Error: NEXT_PUBLIC_GOOGLE_SCRIPT_URL is missing.');
+            setLoading(false);
+            return;
+        }
+
+        try {
+            await fetch(SCRIPT_URL, {
+                method: 'POST',
+                body: urlSearchParams, // This sends as application/x-www-form-urlencoded
+                mode: 'no-cors'
+            });
+
+            // Since we used no-cors, we assume success if no network error threw.
+            setSubmitted(true);
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Error submitting form. Please check your connection.');
+        } finally {
+            setLoading(false);
+        }
     }
 
     return (
