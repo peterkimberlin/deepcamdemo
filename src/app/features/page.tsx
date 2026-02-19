@@ -112,6 +112,10 @@ export default function FeaturesPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                     <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
                         <div className="text-primary font-bold mb-2">FDA Registration</div>
+                        <div className="text-xl text-white font-medium">No. 10091160</div>
+                    </div>
+                    <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                        <div className="text-primary font-bold mb-2">FDA Registration</div>
                         <div className="text-xl text-white font-medium">No. 10094460</div>
                         <div className="text-zinc-400 text-sm mt-1">Ultra-compact optical endoscopy</div>
                     </div>
